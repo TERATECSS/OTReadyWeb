@@ -1,0 +1,29 @@
+page-lista {
+
+    button.green{
+    }
+
+    /*.item.item-block.item-md{
+        background: rgba(0, 92, 128, 0.4);
+    }*/
+
+    .item{
+        background: rgba(0, 92, 128, 0.4);
+    }
+
+    .color{
+        background-color: rgb(170, 168, 168)
+    }
+
+    ion-content{
+        div.scroll-content{
+            background-image: url('./../assets/imgs/background.jpg');
+            background-size: 100%
+        }
+    }
+
+    a{
+        font-size: 30px
+    }
+    
+}

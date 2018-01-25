@@ -1,0 +1,23 @@
+page-formulario-c {
+
+    h3 {
+        font-style: italic;
+    }
+
+    .autoajuste{
+        white-space: normal;
+
+    }
+
+    ion-content{
+        div.scroll-content{
+            background-image: url('./../assets/imgs/background.jpg');
+            background-size: 100%
+        }
+    }
+
+    button.green{
+        background: rgba(0, 128, 0, 0.4);
+    }
+
+}

@@ -1,3 +1,38 @@
-page-home {
+page-home {      
+
+    button.green{
+        background: rgba(0, 128, 0, 0.4);
+        width: 126px
+    }
+    
+    .custom-icon {
+        font-size: 70px;
+        align-content: center
+    }
+
+    .custom-grid-size {
+        height: 120px;
+
+    }
+
+    .custom-button-size {
+        height: 100px;
+        align-content: center
+    }
+
+    button-inner{
+        align-content: center
+    }
+
+    h1{
+        font-style: color($colors, light)
+    }
+
+    ion-content{
+        div.scroll-content{
+            background-image: url('./../assets/imgs/background.jpg');
+            background-size: 100%
+        }
+    }
 
 }

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-title align=center>
+    <h1>OT READY!</h1>
+    <h2>Desktop Version</h2>
+  </ion-title>
+</ion-header>
+
+<ion-content>      
+  <ion-grid>
+    <ion-row>
+      <ion-col col-sm-2 col-md-3 col-lg-4 col-xl-4>
+      </ion-col>
+      <ion-col col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4>
+        <ion-card><br><br>
+          <ion-title align=center><h1>INICIE SESIÓN</h1></ion-title><br>
+              <ion-list>
+                <ion-item>
+                  <ion-label stacked>Correo electrónico</ion-label>
+                    <ion-input [(ngModel)]="user.email" type="email" autocorrect="off"
+                    autocapitalize="none" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                        required></ion-input>
+                </ion-item><br>
+                <ion-item>
+                  <ion-label stacked>Contraseña</ion-label>
+                  <ion-input [(ngModel)]="user.password" type="password" name="password" 
+                  required minlength="6"></ion-input>
+                </ion-item><br>  
+              </ion-list>
+        </ion-card>
+      </ion-col>
+      <ion-col col-sm-2 col-md-3 col-lg-4 col-xl-4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<!-- boton -->
+
+  <ion-grid>
+  <ion-row>
+    <ion-col col-md-4 col-lg-4 col-xl-4>
+    </ion-col>
+    <ion-col col-sm-9 col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4>
+      <div>
+        <button full ion-button (click)="login()" class="green"> <!--[disabled]="!loginData.email || !loginData.password"-->
+          <p>ENTRAR</p>
+        </button>
+      </div>
+    </ion-col>
+    <ion-col col-md-4 col-lg-4 col-xl-4>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

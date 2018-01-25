@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contacto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-col>
+
+  </ion-col>
+
+  <ion-col>
+  <h2>Nombre: </h2> <p>{{(contactoData | async)?.firstName}} {{(contactoData | async)?.lastName}}</p>
+  <h2>Cargo: </h2> <p>{{(contactoData | async)?.cargo}}</p>
+  <h2>Perfil: </h2> <p>{{(contactoData | async)?.perfil}}</p>
+
+  <p>Ubicación</p>
+  <p>{{(ubicacionDataLat | async)?.latitud}}</p>
+  <p>{{(ubicacionDataLng | async)?.longitud}}</p>
+</ion-col>
+  <!--div id="map"></div-->
+  <ion-col>
+
+    </ion-col>
+</ion-content>
